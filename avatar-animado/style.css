@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #caddf5;
+    min-height: 100vh;
+    flex-flow: column;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.canva {
+    max-width: 250px;
+    --background: #e3f0ff;
+    --shirt: #6e737f;
+    --hair: #8f6148;
+    --border-size: 2px;
+
+    --skin: #fca;
+    --skin-dark: #ffb481;
+    --border: #c36c58;
+
+    --anim: 0.1s;
+
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.canva:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 30%;
+    left: 0;
+    background: var(--background);
+    border-radius: 80% 80% 0% 0% / 50%;
+}
+
+.face {
+    position: relative;
+    top: 26%;
+    left: 50%;
+    width: 38%;
+    height: 40%;
+    background: var(--skin);
+    border-radius: 0% 0% 50% 50% / 50%;
+    transform: translate(-50%, 0);
+    box-shadow: inset .5em 0 var(--skin-dark);
+    transition: all var(--anim) ease-in-out;
+}
+
+.neck {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    width: 18%;
+    height: 11%;
+    background: var(--skin);
+    border-radius: 0% 0% 100% 100% / 50%;
+    transform: translate(-50%, 0);
+}
+
+.shirt {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    width: 60%;
+    height: 50%;
+    background: var(--shirt);
+    border-radius: 100% 100% 0% 0% / 80%;
+}
+
+.nose {
+    position: relative;
+    width: 9%;
+    height: 9%;
+    border-radius: 50%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 70% 50% 50% 50% / 50%;
+    border-color: var(--border);
+    border-style: solid;
+    border-width: var(--border-size) 0 0 0;
+    transition: transform var(--anim) ease-in-out;
+}
+
+.mouth {
+    position: relative;
+    width: 22%;
+    height: 9%;
+    border-radius: 50%;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(-10deg);
+    border-radius: 0 0 50% 50% / 50%;
+    border-color: var(--border);
+    border-style: solid;
+    border-width: 0 0 var(--border-size) 0;
+    transition: transform var(--anim) ease-in-out;
+}
+
+.ear {
+    position: relative;
+    top: -97%;
+    left: 25%;
+    width: 10%;
+    height: 10%;
+    border-radius: 50% 100% 50% 100% / 100%;
+    background: var(--skin);
+    transition: transform var(--anim) ease-in-out;
+}
+
+.ear:before {
+    position: relative;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 65%;
+    top: 15%;
+    left: 20%;
+    border-radius: 100% 100% 0% 0% / 100%;
+    border-color: var(--border);
+    border-style: solid;
+    border-width: var(--border-size) 0 0 0;
+    transform: rotate(20deg);
+}
+
+.ear:after {
+    position: relative;
+    display: block;
+    content: '';
+    width: 30%;
+    height: 22%;
+    top: -38%;
+    left: 35%;
+    border-radius: 40% 50% 50% 40%/ 50%;
+    border-color: var(--border);
+    border-style: solid;
+    border-width: var(--border-size) 0 var(--border-size) var(--border-size);
+    transform: rotate(0deg);
+}
+
+.ear+.ear {
+    top: -107%;
+    left: 65%;
+    transform: rotateY(180deg);
+}
+
+.eyebrown {
+    position: relative;
+    top: 18%;
+    left: 19%;
+    width: 18%;
+    height: 3%;
+    border-radius: 50% 50% 0% 0% / 50%;
+    border-top: calc(var(--border-size)*1.5) solid var(--hair);
+    ;
+    transform: rotate(-10deg);
+    transition: transform var(--anim) ease-in-out;
+}
+
+.eyebrown+.eyebrown {
+    left: 63%;
+    top: 15%;
+    transform: rotate(10deg);
+}
+
+.eye {
+    position: relative;
+    top: 25%;
+    left: 25%;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    background: #000;
+    transition: transform var(--anim) ease-in-out;
+}
+
+.eye+.eye {
+    top: 15%;
+    left: 65%;
+}
+
+.eye:after {
+    position: relative;
+    display: block;
+    content: '';
+    width: 30%;
+    height: 22%;
+    top: 20%;
+    left: 20%;
+    border-radius: 50%;
+    background: #FFF;
+    transition: transform var(--anim) ease-in-out;
+}
+
+.hair {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 3%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: transform var(--anim) ease-in-out;
+}
+
+.hair-1 {
+    background-color: var(--hair);
+    position: relative;
+    top: 20%;
+    left: 30%;
+    width: 30%;
+    height: 22%;
+    border-radius: 50%;
+    border-radius: 100% 0% 60% 30% / 50%;
+    transform: rotate(0deg);
+}
+
+.hair-2 {
+    background-color: var(--hair);
+    position: relative;
+    top: -2%;
+    left: 58%;
+    width: 18%;
+    height: 22%;
+    border-radius: 50%;
+    border-radius: 0% 100% 30% 70% / 50%;
+}
+
+.hair-3 {
+    background-color: var(--hair);
+    position: relative;
+    top: -6%;
+    left: 65%;
+    width: 7%;
+    height: 17%;
+    border-radius: 50%;
+    border-radius: 20% 20% 50% 50% / 50%;
+}
+
+.hair-4 {
+    background-color: var(--hair);
+    position: relative;
+    top: -25%;
+    left: 28%;
+    width: 7%;
+    height: 19%;
+    border-radius: 50%;
+    border-radius: 20% 20% 50% 50% / 50%;
+}
+
+.hair-5 {
+    background-color: var(--hair);
+    position: relative;
+    top: -47%;
+    left: 27%;
+    width: 10%;
+    height: 5%;
+    transform: rotate(22deg);
+    border-radius: 50%;
+    border-radius: 50% 10% 50% 50% / 50%;
+}
+
+.focused .face {
+    transform: translate(-51%, 2.5%);
+    box-shadow: inset .4em -.2em var(--skin-dark);
+}
+
+.focused .hair {
+    transform: translate(-0.5%, -49.5%);
+}
+
+.focused .ear {
+    transform: translate(-5%, 10%);
+}
+
+.focused .ear+.ear {
+    transform: translate(-5%, 10%) rotateY(180deg);
+}
+
+.focused .eyebrown {
+    transform: translate(-10%, 80%) rotate(-10deg);
+}
+
+.focused .eyebrown+.eyebrown {
+    transform: translate(-10%, 0%) rotate(10deg);
+}
+
+.focused .nose {
+    transform: translate(-70%, 30%);
+}
+
+.focused .mouth {
+    transform: translate(-50%, 20%) rotate(-10deg);
+}
+
+.arm-box {
+    --hand-color: var(--skin);
+    ;
+    position: relative;
+    top: -123%;
+    left: 22%;
+    width: 20%;
+    height: 90%;
+    transform: rotate(90deg) translateX(150%);
+    transition: transform var(--anim) ease-in-out;
+}
+
+.arm-box+.arm-box {
+    left: 58%;
+    top: -213%;
+    transform: rotateY(180deg) rotate(90deg) translateX(150%);
+}
+
+.arm {
+    position: relative;
+    top: 20%;
+    left: 25%;
+    width: 65%;
+    height: 60%;
+    background: var(--hand-color);
+    box-shadow: inset -.15em 0 var(--skin-dark);
+}
+
+.hand {
+    position: relative;
+    top: -45%;
+    left: 20%;
+    width: 80%;
+    height: 16%;
+    background: var(--hand-color);
+    box-shadow: inset -.18em 0 var(--skin-dark);
+    border-radius: 0 0 50% 50% / 20%;
+    z-index: 5;
+}
+
+.finger {
+    position: relative;
+    top: -85%;
+    left: -0%;
+    width: 25%;
+    height: 90%;
+    background: var(--hand-color);
+    border-radius: 50% 50% 0 0 / 20%;
+    box-shadow: inset -.18em 0 var(--skin-dark);
+    z-index: 3;
+    transition: all var(--anim) ease-in-out;
+}
+
+.finger+.finger {
+    top: -195%;
+    left: 25%;
+    height: 110%;
+}
+
+.finger+.finger+.finger {
+    top: -285%;
+    left: 50%;
+    height: 90%;
+}
+
+.finger+.finger+.finger+.finger {
+    top: -359%;
+    left: 75%;
+    height: 80%;
+}
+
+.finger+.finger+.finger+.finger+.finger {
+    top: -360%;
+    left: -20%;
+    height: 100%;
+    transform: rotate(-20deg);
+    border-radius: 50% 50% 0 50% / 20%;
+    z-index: 1;
+    box-shadow: inset -.15em .15em var(--skin-dark),
+        inset 0 -1.4em var(--hand-color);
+}
+
+.finger+.finger+.finger+.finger+.finger:after {
+    position: relative;
+    display: block;
+    content: '';
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 50%;
+    background: var(--hand-color);
+}
+
+.secret .arm-box {
+    transform: rotate(11deg) translateX(0%);
+}
+
+.secret .arm-box+.arm-box {
+    transform: rotateY(180deg) rotate(11deg) translate(0%, 0%);
+}
+
+.secret.showed .arm-box+.arm-box {
+    transform: rotateY(180deg) rotate(11deg) translate(0%, 3%);
+}
+
+.secret.showed .arm-box+.arm-box .finger+.finger+.finger {
+    transform: rotate(20deg);
+    left: 62%;
+}
+
+.secret.showed .arm-box+.arm-box .finger+.finger+.finger+.finger {
+    left: 85%;
+}
+
+.secret.showed .arm-box+.arm-box .finger+.finger+.finger+.finger+.finger {
+    transform: rotate(-20deg);
+    left: -20%;
+}
+
+/* FORM */
+.form-container:before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: 0;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.form-container {
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    position: absolute;
+    transform: translate(10px, -50%);
+    background: #FFF;
+    color: #888;
+    padding: 0 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1em;
+}
+
+.password-group {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-55%);
+    cursor: pointer;
+    user-select: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #418fd2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.2em;
+    box-shadow: 0 5px #2f5d8c;
+    transition: all 0.1s;
+}
+
+button:hover {
+    background-color: #3d7ab8;
+}
+
+button:active {
+    background-color: #3d7ab8;
+    box-shadow: 0 0 #2f5d8c;
+    transform: translateY(5px);
+}
+
+.signature {
+    padding-top: 1em;
+    color: #333333;
+    font-size: .7em;
+}
+
+.signature a {
+    color: #315670;
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Estatística Descritiva</title>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Estatística Descritiva</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#entradasSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Tipos de Entrada</a>
+                    <ul class="collapse list-unstyled" id="entradasSubmenu">
+                        <li>
+                            <a href="#">Dados Brutos</a>
+                        </li> 
+                        <li>
+                            <a style="text-decoration: line-through; color: #555;">Classes Definidas</a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: line-through; color: #555;">Regressão Linear (X e Y)</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" id="reset-entrada">Limpar Dados</a>
+                </li>
+                <li>
+                    <a href="#" id="simule-entrada">Simular Entrada</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://jimmyfilips.github.io/demo/estatistica/" class="download">Veja no Github</a>
+                </li>
+                <li>
+                    <a href="https://github.com/jimmyfilips/" class="github">Veja outros Projetos</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+
+                    <div>
+                        <p class="navbar-nav ml-auto">
+                            &copy; 2018
+                        </p>
+                    </div>
+                </div>
+            </nav>
+
+            <h2>Entrada de dados</h2>
+            <p>Use os botões de '+' e '-' para adicionar ou remover campos de dados. Experimente também as opções "Limpar dados" e "Simular dados" no menu. Após adicionar dados, ao clicar fora de um campo, utilizar a tecla tab ou interagir com outros campos, o processo é executado automaticamente</p>
+            
+            <div class="fluid-options">
+
+                <p>
+                    <span class="campo" data-entrada></span> 
+                    <button type="button" id="data-add-entrada" class="btn add-entrada btn-tema">+</button> 
+                    <button type="button" id="data-rem-entrada" class="btn rem-entrada btn-tema">-</button>
+                </p>
+
+                <p>
+                    <button class="btn btn-tema" id="reset-entrada-2">Limpar</button>
+                    <button class="btn btn-tema" id="processar-dados">Processar</button>
+                </p>
+            </div>
+               
+            <p class="box-entradas" data-entrada-box></p> 
+            
+            <p class="box-rol" data-rol>Aguardando Dados...</p>
+            
+            <p class="box-rol" data-entrada-error>...</p>
+
+            <div class="line"></div>  
+
+            <h2>Tabela de Distribuição de Frequência</h2>
+            <p>A tabela abaixo demonstra os dados de forma AGRUPADA e SEM CLASSE (Discreta). É possível visualizar a LEGENDA de cada item descrito na tabela através do botão abaixo.</p>
+            
+            <div>
+                <button href="#tabFreqLegenda" data-toggle="collapse" aria-expanded="false" class="btn btn-tema" style="    margin: 0 0 1rem 1rem;">Ver legenda</button>
+                <div class="collapse" id="tabFreqLegenda" style="overflow-x:auto;">
+                    <table class="tabela-frequencia nostretch">
+                        <tr>
+                            <th>-</th>
+                            <th>Descrição</th> 
+                            <th>Fórmula</th> 
+                        </tr>
+                        <tr>
+                            <td>xi</td> 
+                            <td class="toleft"><strong>X</strong>: Relativo ao valor da posição "i"</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>fi</td>
+                            <td class="toleft"><strong>Frequência</strong>: Quantas vezes este valor aparece</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>fri</td>
+                            <td class="toleft"><strong>Frequência relativa</strong>: Valor de "fi" dividido pela soma de "xi"</td>
+                            <td>fi / &sum;xi</td>
+                        </tr>
+                        <tr>
+                            <td>Fi</td>
+                            <td class="toleft"><strong>Frequência acumulada</strong>: Valor de "fi" somado ao "Fi" anterior</td>
+                            <td>FiAnterior + fi</td>
+                        </tr>
+                        <tr>
+                            <td>Fri</td>
+                            <td class="toleft"><strong>Frequência acumulada relativa</strong>: representado apenas como Fi/&sum;fi</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>di</td>
+                            <td class="toleft"><strong>Medida de dispersão</strong>: Verifica o quão distante o valor está da média</td>
+                            <td>xi - <span style="text-decoration: overline;">x</span></td>
+                        </tr>
+                        <tr>
+                            <td>|di|</td>
+                            <td class="toleft"><strong>Medida de dispersão</strong>: Valor de "di" convertido para positivo em todos os casos</td>
+                            <td>se di &lt; 0, |di| = di * (-1)</td>
+                        </tr>
+                    </table>
+            
+                    <div class="line"></div>
+                </div>
+            </div>
+            
+            <div style="overflow-x:auto;">
+                <table class="tabela-frequencia" data-tabela-frequencia>
+                    <tr>
+                        <th>i</th>
+                        <th>xi</th> 
+                        <th>xi²</th> 
+                        <th>fi</th>
+                        <th>fri</th>
+                        <th>xifi</th>
+                        <th>xi²fi</th>
+                        <th>Fi</th>
+                        <th>Fri</th>
+                        <th>di</th>
+                        <th>|di|</th>
+                        <th>|di|fi</th>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+            <p>* A Tabela possui scroll horizontal</p>
+            
+            <div class="line"></div>
+
+            <h2>Resultados</h2>
+            <div class="tabela-resultados">
+                <table class="tabela-frequencia nostretch d-inline-block m-2">
+                    <caption class="text-center">Medidas de tendência central</caption>
+                    <tr>
+                        <td>Média</td> 
+                        <td><span style="text-decoration: overline;">x</span></td>
+                        <td><span data-saida-media>-</span></td>
+                    </tr>
+                    <tr>
+                        <td>Moda</td>
+                        <td>Mo</td>
+                        <td><span data-saida-moda>-</span></td>
+                    </tr>
+                    <tr>
+                        <td>Mediana</td>
+                        <td>Md</td>
+                        <td><span data-saida-mediana>-</span></td>
+                    </tr>
+                </table>
+
+                <table class="tabela-frequencia nostretch d-inline-block m-2"> 
+                    <caption class="text-center">Medidas de Dispersão</caption>
+                    <tr>
+                        <td>Desvio Médio</td> 
+                        <td>Dm</td>
+                        <td><span data-saida-desvio-medio>-</span></td>
+                    </tr>
+                    <tr>
+                        <td>Variância</td>
+                        <td>S²</td>
+                        <td><span data-saida-variancia>-</span></td>
+                    </tr>
+                    <tr>
+                        <td>Desvio Padrão</td>
+                        <td>S</td>
+                        <td><span data-saida-desvio-padrao>-</span></td>
+                    </tr>
+                </table>
+            </div>
+        
+            <hr> 
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>

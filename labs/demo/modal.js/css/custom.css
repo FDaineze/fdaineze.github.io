@@ -1,0 +1,201 @@
+/* --- */
+body {
+    background-color: #EFEFEF;
+}
+
+article {
+    padding: 6rem 0;
+}
+
+.titulo {
+    font-size: 3.3rem;
+    font-weight: bold;
+}
+
+.sub-titulo {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.botao-produto {
+  cursor:pointer;
+  color: blue;
+}
+
+.botao-produto {
+    border: 2px solid #955DB8;
+    border-radius: 30px;
+    color: #955DB8;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin: 30px auto;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 150px;
+}
+.botao-produto:hover {
+    background-color: #955DB8;
+    color: #fff;
+}
+/* Modals
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.prod-opcoes {
+    background-color:#FFF;
+    padding:20px;
+    border-radius: 5px;
+    position: relative;
+}
+.prod-opcoes.form-contato {
+    padding:0;
+} 
+.prod-opcoes-close {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+	font-size: 10px;
+	color: #626262;
+    font-weight: bold;
+	padding: 8px 16px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#f0f0f0);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		to(#f0f0f0));
+	-moz-border-top-right-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	text-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+    border: 1px solid #d1d1d1;
+}
+.prod-opcoes-close:hover {
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#f6f6f6);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		to(#f6f6f6));
+    border: 1px solid #e8e8e8;
+}
+.prod-opcoes-logo {
+    height: 72px;
+}
+.prod-opcoes-logo img {
+	padding: 1rem 0 2rem 0 !important;
+}
+.prod-opcoes-bt {
+    padding: 8px 0 2px 0;
+}
+.prod-opcoes-box {
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    padding: 10px 0;
+    border-radius: 5px;
+}
+a.botao-mercadopago {
+	color: #ffffff;
+    text-decoration: none;
+}
+a.botao-mercadopago {
+/*	font-family: Arial, Helvetica, sans-serif;*/
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#00a5ec 0%,
+		#2d3277);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#00a5ec),
+		to(#2d3277));
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+a.botao-mercadopago:hover {
+	background: -moz-linear-gradient(
+		top,
+		#00a5ec 0%,
+		#484ea2);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#00a5ec),
+		to(#484ea2));
+}
+a.botao-mercadopago:active {
+	background: -moz-linear-gradient(
+		top,
+		#484ea2 0%,
+		#00a5ec);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#484ea2),
+		to(#00a5ec));
+}
+a.botao-pagseguro {
+	color: #ffffff;
+    text-decoration: none;
+    content: 'Comprar';
+}
+a.botao-pagseguro {
+/*	font-family: Arial, Helvetica, sans-serif;*/
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#77BA00 0%,
+		#5C9336);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#77BA00),
+		to(#5C9336));
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+a.botao-pagseguro:hover {
+	background: -moz-linear-gradient(
+		top,
+		#77BA00 0%,
+		#69a83c);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#77BA00),
+		to(#69a83c));
+}
+a.botao-pagseguro:active {
+	background: -moz-linear-gradient(
+		top,
+		#5C9336 0%,
+		#77BA00);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#5C9336),
+		to(#77BA00));
+}
+.prod-download {
+    padding-top: 3rem; 
+}
+.ico-download {
+    margin-right: 10px;
+}
+@media (max-width: 762px) {
+    .prod-opcoes {
+        min-width: 90vw;
+    }
+    .prod-opcoes-box-space {
+        margin-bottom: 3rem;
+    }
+}

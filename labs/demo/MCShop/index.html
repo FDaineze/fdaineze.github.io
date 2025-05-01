@@ -1,0 +1,890 @@
+<!--
+*********************************************************
+*** Projeto: Website/E-commerce
+*** Autor: JimmyFilips
+*** Website: https://github.com/jimmyfilips 
+*********************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br"> 
+
+<head> 
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>MCShop - Compre Minecraft Original com Qualidade e Segurança</title>
+    <meta name="description" content="Minecraft Full Acesso por R$ 25,00, o melhor preço do mercado! Somos a melhor loja de Minecraft do Brasil, temos o melhor produto pelo melhor preço. Comprar Minecraft barato. Por que comprar conosco ? Segurança na compra. Sua compra é segura feita por Pagseguro ou Paypal, e oferecemos total garantia">
+    <meta name="author" content="JimmyFilips">
+    <meta name="keywords" content="MCShop, minecraft, comprar, original, barato, brasil"/>
+    
+	<meta name="twitter:title" content="MCShop.com.br" />
+	<meta name="twitter:description" content="A Melhor & Mais segura loja de minecraft do Brasil! Contas Full Acesso a R$25,00!!" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@cavaleiro" /> 
+    <meta name="twitter:image" content="https://jimmyfilips.github.io/MCShop/img/share.jpg" />
+    
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://jimmyfilips.github.io/MCShop">
+    <meta property="og:title" content="Compre Minecraft Original com Qualidade e Segurança!">
+    <meta property="og:site_name" content="MCShop">
+    <meta property="og:description" content="A Melhor & Mais segura loja de minecraft do Brasil! Contas Full Acesso a R$25,00!!">
+    <meta property="og:image" content="https://jimmyfilips.github.io/MCShop/img/share.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website"> 
+    
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- JS e JQUERY
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Local -->
+    <script src="js/parallax.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- CAROUSEL -->
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
+    <script src="dist/owl.carousel.min.js"></script>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css" />
+    <script src="js/aos.js"></script>
+    
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="img/favicon.jpg">
+</head> 
+
+<body>
+
+    <!-- Menu de Navegação
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <nav id="menu" class="navbar navbar-custom navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">
+                    <a href="#inicio">MCShop</a>
+                </div>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#quem-somos">Sobre</a></li>
+                    <li><a href="#parceiros">Parceiros</a></li>
+                    <li><a href="#perguntas-frequentes">FAQ</a></li>
+                    <li><a data-md="janelacontato">Fale conosco</a></li>
+                </ul>
+            </div>
+        </div> 
+    </nav>
+
+    <!-- Header
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="spacing"></div>
+    <header class="inicio" id="inicio">
+        <div class="parallax-window" data-parallax="scroll" data-position="center" data-androidFix="false" data-image-src="img/header-1400.jpg">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <img class="img-responsive" src="img/logo.png" alt="Logo Minecraft">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <main>
+        <h1 style="display: none">Principal</h1>
+        
+        <!-- Produtos
+        –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+        <article class="section produtos" id="produtos">
+            <div class="container">
+                <div class="row text-center">
+                    <h2 class="titulo compras">Vamos as compras!</h2>
+                    <p class="promo-inauguracao">Promoção de inauguração!</p>
+
+                    <!-- Coluna 2
+                    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                    <div class="col-sm-6 col-md-offset-1 col-md-5">
+                        <div class="box-produto"><!-- use "gold-box" para destacar -->
+                            <div class="prod-header produto-2"> <!-- use "gold-destaque" para destacar -->
+                                <!-- para tirar o selo é só add a class "hidden" -->
+                                <div class="selo hidden"> 
+                                    <div class="selo-nome">PROMO</div>
+                                </div>
+                            </div>
+                            <div class="vantagens">
+                                <p class="destaque">Minecraft dos Amigos</p> 
+                                <p class="promo-inauguracao hidden">Promoção de inauguração!</p>
+                                <p class="prod-preco-antigo" data-aos="fade"><span>de R$40,00</span> por</p> 
+                                <p class="prod-preco">R$29,99</p> 
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> 3 contas compartilhadas</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> Sem banimentos</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-remove"></i> Não é possível trocar skin</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-remove"></i> Não é possível trocar senha</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-remove"></i> Não é possível trocar nick</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-remove"></i> Não é possível trocar e-mail</p>
+                                <p class="texto vant-space" data-aos="fade"><i class="fa fa-remove"></i> Não é possível trocar perguntas de seguranças</p>
+                            </div>
+                            <!-- "data-md", define qual modal será aberto. -->
+                            <a data-md="janela2"><p class="prod-comprar">Comprar</p></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Coluna 1
+                    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                    <div class="col-sm-6 col-md-5">
+                        <div class="box-produto"><!-- use "gold-box" para destacar -->
+                            <div class="prod-header produto-1"> <!-- use "gold-destaque" para destacar -->
+                                <div class="selo hidden">
+                                    <div class="selo-nome">PROMO</div>
+                                </div>
+                            </div>
+                            <div class="vantagens">
+                                <p class="destaque">Full Acesso</p>
+                                <p class="promo-inauguracao hidden">Promoção de inauguração!</p>
+                                <p class="prod-preco-antigo" data-aos="fade"><span>de R$80,00</span> por</p> 
+                                <p class="prod-preco">R$59,99</p> 
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> 1 Conta somente SUA</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> Sem banimentos</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> É possível trocar skin</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> É possível trocar senha</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> É possível trocar nick</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> É possível trocar e-mail</p>
+                                <p class="texto vant-space" data-aos="fade"><i class="fa fa-check"></i> É possível trocar perguntas de seguranças</p>
+                            </div>
+                            <!-- "data-md", define qual modal será aberto. -->
+                            <a data-md="janela1"><p class="prod-comprar">Comprar</p></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row text-center">
+
+                    <!-- Coluna 3
+                    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                    <div class="col-sm-6 col-md-offset-1 col-md-5">
+                        <div class="box-produto"><!-- use "gold-box" para destacar -->
+                            <div class="prod-header produto-3"> <!-- use "gold-destaque" para destacar -->
+                                <div class="selo hidden">
+                                    <div class="selo-nome">PROMO</div>
+                                </div>
+                            </div>
+                            <div class="vantagens">
+                                <p class="destaque">Minecraft DARK</p>
+                                <p class="promo-inauguracao hidden">Promoção de inauguração!</p>
+                                <p class="prod-preco-antigo" data-aos="fade"><span>de R$99,99</span> por</p> 
+                                <p class="prod-preco">R$79,99</p> 
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> 1 Conta somente SUA</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> Sem banimentos</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> É possível trocar skin</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> É possível trocar senha</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> É possível trocar nick</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> É possível trocar e-mail</p>
+                                <p class="texto vant-space" data-aos="fade"><i class="fa fa-check"></i> É possível trocar perguntas de seguranças</p>
+                                
+                                
+                                <input type="checkbox" class="ativador-input" id="item-2">
+                                <div class="ativador-desc" data-aos="flip-right">
+                                    <label for="item-2" class="desc-titulo texto"><i class="fa fa-question-circle"></i> Descrição do VIP DARK</label>
+                                    <p class="desc-texto texto">acesso a todos servidores da rede Dark, vip exclusivo além de minecraft original para jogar em nossas REDES!</p>
+                                </div>
+                                
+                                
+                            </div>
+                            <!-- "data-md", define qual modal será aberto. -->
+                            <a data-md="janela3"><p class="prod-comprar">Comprar</p></a>
+                        </div>
+                    </div>
+
+                    <!-- Coluna 4
+                    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                    <div class="col-sm-6 col-md-5">
+                        <div class="box-produto"><!-- use "gold-box" para destacar -->
+                            <div class="prod-header produto-4"> <!-- use "gold-destaque" para destacar -->
+                                <!-- para tirar o selo é só add a class "hidden" -->
+                                <div class="selo hidden"> 
+                                    <div class="selo-nome">PROMO</div>
+                                </div>
+                            </div>
+                            <div class="vantagens">
+                                <p class="destaque">Minecraft SUPREMO</p> 
+                                <p class="promo-inauguracao hidden">Promoção de inauguração!</p>
+                                <p class="prod-preco-antigo" data-aos="fade"><span>de R$139,99</span> por</p> 
+                                <p class="prod-preco">R$117,99</p> 
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> 1 Conta somente SUA</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> Sem banimentos</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> É possível trocar skin</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> É possível trocar senha</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> É possível trocar nick</p>
+                                <p class="texto" data-aos="fade"><i class="fa fa-check"></i> É possível trocar e-mail</p>
+                                <p class="texto vant-space" data-aos="fade"><i class="fa fa-check"></i> É possível trocar perguntas de seguranças</p>
+                                
+                                
+                                <input type="checkbox" class="ativador-input" id="item-1">
+                                <div class="ativador-desc" data-aos="flip-right">
+                                    <label for="item-1" class="desc-titulo texto"><i class="fa fa-question-circle"></i> Descrição do VIP SUPREMO</label>
+                                    <p class="desc-texto texto">acesso a todos servidores da rede Dark, minecraft original além de um VIP E TAG EXCLUSIVAS em TODOS servidores.</p>
+                                </div>
+                                
+                                
+                            </div>
+                            <!-- "data-md", define qual modal será aberto. -->
+                            <a data-md="janela4"><p class="prod-comprar">Comprar</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <!-- O que Somos
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <article class="section quem-somos" id="quem-somos">
+            <div class="container">
+                <div class="row text-center">
+                    <h2 class="titulo">O que somos?</h2>
+
+                    <!-- Coluna 1
+                    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                    <div class="col-md-4">
+                       
+                        <!-- SATISFAÇÃO GARANTIDA -->
+                        <div class="col-md-12" data-aos="fade">
+                            <div class="col-md-2">
+                                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <p class="sub-titulo">SATISFAÇÃO GARANTIDA</p>
+                                <p class="texto">Para termos certeza da sua satisfação nós testamos nossas contas no momento que adquirimos novos estoques e antes de enviarmos a você!</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Coluna 2
+                    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                    <div class="col-md-4">
+                       
+                        <!-- SEGURANÇA QUALIFICADA -->
+                        <div class="col-md-12" data-aos="fade">
+                            <div class="col-md-2">
+                                <i class="fa fa-certificate" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <p class="sub-titulo">SEGURANÇA QUALIFICADA</p>
+                                <p class="texto">Além do certificado SLL nosso site conta com os melhores e mais seguros meios de pagamento: MercadoPago & PagSeguro.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Coluna 3
+                    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                    <div class="col-md-4">
+                       
+                        <!-- SUPORTE ESPECIALIZADO -->
+                        <div class="col-md-12" data-aos="fade">
+                            <div class="col-md-2">
+                                <i class="fa fa-ambulance" aria-hidden="true" style="margin-left: -10px;"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <p class="sub-titulo">SUPORTE ESPECIALIZADO</p>
+                                <p class="texto">Para garantir que você não fique na mão, contamos com um amplo suporte especializado pronto para atendê-lo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <!-- Parceiros -->
+        <article class="section parceiros" id="parceiros">
+            <div class="text-center">
+                <h2 class="titulo section-title compras">
+                    <span class="section-title-text">Nossos Parceiros</span>
+                </h2>
+                <div class="container" data-aos="fade">
+                    <div class="owl-carousel owl-theme carousel-parceiros">
+                        <!-- Coluna 1 -->
+                        <div class="item">
+                            <div class="item-in one"></div>
+                            <!-- PARCEIRO 1 -->
+                            <div class="parceiros-box">
+<!-- ------------------------------------------------------------------- --> 
+<!-- CANAL -->
+<!-- ------------------------------------------------------------------- -->
+                                <a href="https://www.youtube.com/channel/canal1" target="_blank">
+                                    <div class="avatar">
+                                        <span class="verificado"><i class="fa fa-check"></i></span>
+                                        <img src="img/parceiros/01.jpg">
+                                    </div>
+<!-- ------------------------------------------------------------------- -->
+<!-- NOME DO PARCEIRO 1 -->
+<!-- ------------------------------------------------------------------- -->
+                                    <p class="sub-titulo yt-nome">NOME DO YT</p>
+                                </a>
+<!-- ------------------------------------------------------------------- -->
+<!-- INSCRITOS -->
+<!-- ------------------------------------------------------------------- -->
+                                <p class="subs" title="Inscritos">+181.167 <i class="fa fa-youtube-play"></i></p>
+<!-- ------------------------------------------------------------------- -->
+<!-- VIEWS -->
+<!-- ------------------------------------------------------------------- -->
+                                <p class="views" title="Visualizações">+11.921.722 <i class="fa fa-eye"></i></p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-in two"></div>
+                            <!-- PARCEIRO 2 -->
+                            <div class="parceiros-box">
+<!-- ------------------------------------------------------------------- -->
+<!-- CANAL -->
+<!-- ------------------------------------------------------------------- -->
+                                <a href="https://www.youtube.com/channel/canal2" target="_blank">
+                                    <div class="avatar">
+                                        <span class="verificado"><i class="fa fa-check"></i></span>
+                                        <img src="img/parceiros/02.jpg">
+                                    </div>
+<!-- ------------------------------------------------------------------- -->
+<!-- NOME DO PARCEIRO 2 -->
+<!-- ------------------------------------------------------------------- -->
+                                    <p class="sub-titulo yt-nome">NOME DO YT</p>
+                                </a>
+<!-- ------------------------------------------------------------------- -->
+<!-- INSCRITOS -->
+<!-- ------------------------------------------------------------------- -->
+                                <p class="subs" title="Inscritos">+181.167 <i class="fa fa-youtube-play"></i></p>
+<!-- ------------------------------------------------------------------- -->
+<!-- VIEWS -->
+<!-- ------------------------------------------------------------------- -->
+                                <p class="views" title="Visualizações">+11.921.722 <i class="fa fa-eye"></i></p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-in thee"></div>
+                            <!-- PARCEIRO 3 -->
+                            <div class="parceiros-box">
+<!-- ------------------------------------------------------------------- -->
+<!-- CANAL -->
+<!-- ------------------------------------------------------------------- -->
+                                <a href="https://www.youtube.com/channel/canal3" target="_blank">
+                                    <div class="avatar">
+                                        <span class="verificado"><i class="fa fa-check"></i></span>
+                                        <img src="img/parceiros/03.jpg">
+                                    </div>
+<!-- ------------------------------------------------------------------- -->
+<!-- NOME DO PARCEIRO 3 -->
+<!-- ------------------------------------------------------------------- -->
+                                    <p class="sub-titulo yt-nome">NOME DO YT</p>
+                                </a>
+<!-- ------------------------------------------------------------------- -->
+<!-- INSCRITOS -->
+<!-- ------------------------------------------------------------------- -->
+                                <p class="subs" title="Inscritos">+181.167 <i class="fa fa-youtube-play"></i></p>
+<!-- ------------------------------------------------------------------- -->
+<!-- VIEWS -->
+<!-- ------------------------------------------------------------------- -->
+                                <p class="views" title="Visualizações">+11.921.722 <i class="fa fa-eye"></i></p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-in four"></div>
+                            <!-- PARCEIRO 4 -->
+                            <div class="parceiros-box">
+<!-- ------------------------------------------------------------------- -->
+<!-- CANAL -->
+<!-- ------------------------------------------------------------------- -->
+                                <a href="https://www.youtube.com/channel/canal4" target="_blank">
+                                    <div class="avatar">
+                                        <span class="verificado"><i class="fa fa-check"></i></span>
+                                        <img src="img/parceiros/04.jpg">
+                                    </div>
+<!-- ------------------------------------------------------------------- -->
+<!-- NOME DO PARCEIRO 4 -->
+<!-- ------------------------------------------------------------------- -->
+                                    <p class="sub-titulo yt-nome">NOME DO YT</p>
+                                </a>
+<!-- ------------------------------------------------------------------- -->
+<!-- INSCRITOS -->
+<!-- ------------------------------------------------------------------- -->
+                                <p class="subs" title="Inscritos">+181.167 <i class="fa fa-youtube-play"></i></p>
+<!-- ------------------------------------------------------------------- -->
+<!-- VIEWS -->
+<!-- ------------------------------------------------------------------- -->
+                                <p class="views" title="Visualizações">+11.921.722 <i class="fa fa-eye"></i></p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-in five"></div>
+                            <!-- PARCEIRO 5 -->
+                            <div class="parceiros-box">
+<!-- ------------------------------------------------------------------- -->
+<!-- CANAL -->
+<!-- ------------------------------------------------------------------- -->
+                                <a href="https://www.youtube.com/channel/canal5" target="_blank">
+                                    <div class="avatar">
+                                        <span class="verificado"><i class="fa fa-check"></i></span>
+                                        <img src="img/parceiros/05.jpg">
+                                    </div>
+<!-- ------------------------------------------------------------------- -->
+<!-- NOME DO PARCEIRO 5 -->
+<!-- ------------------------------------------------------------------- -->
+                                    <p class="sub-titulo yt-nome">NOME DO YT</p>
+                                </a>
+<!-- ------------------------------------------------------------------- -->
+<!-- INSCRITOS -->
+<!-- ------------------------------------------------------------------- -->
+                                <p class="subs" title="Inscritos">+181.167 <i class="fa fa-youtube-play"></i></p>
+<!-- ------------------------------------------------------------------- -->
+<!-- VIEWS -->
+<!-- ------------------------------------------------------------------- -->
+                                <p class="views" title="Visualizações">+11.921.722 <i class="fa fa-eye"></i></p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-in six"></div>
+                            <!-- PARCEIRO 6 -->
+                            <div class="parceiros-box">
+<!-- ------------------------------------------------------------------- -->
+<!-- CANAL -->
+<!-- ------------------------------------------------------------------- -->
+                                <a href="https://www.youtube.com/channel/canal6" target="_blank">
+                                    <div class="avatar">
+                                        <span class="verificado"><i class="fa fa-check"></i></span>
+                                        <img src="img/parceiros/06.jpg">
+                                    </div>
+    <!-- ------------------------------------------------------------------- -->
+    <!-- NOME DO PARCEIRO 6 -->
+    <!-- ------------------------------------------------------------------- -->
+                                    <p class="sub-titulo yt-nome">NOME DO YT</p>
+                                </a>
+<!-- ------------------------------------------------------------------- -->
+<!-- INSCRITOS -->
+<!-- ------------------------------------------------------------------- -->
+                                <p class="subs" title="Inscritos">+181.167 <i class="fa fa-youtube-play"></i></p>
+<!-- ------------------------------------------------------------------- -->
+<!-- VIEWS -->
+<!-- ------------------------------------------------------------------- -->
+                                <p class="views" title="Visualizações">+11.921.722 <i class="fa fa-eye"></i></p>
+                            </div>
+                        </div>
+
+                        <!-- FIM PARCEIROS -->
+
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function() {
+                    $('.carousel-parceiros').owlCarousel({
+                        loop: true,
+                        margin: 10,
+                        autoplay: true,
+                        autoplayTimeout: 5000,
+                        autoplayHoverPause: true,
+                        nav: false,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            480: {
+                                items: 2
+                            },
+                            768: {
+                                items: 3
+                            },
+                            992: {
+                                items: 4
+                            }
+                        }
+                    })
+                })
+
+            </script>
+        </article>
+
+        <!-- Perguntas Frequentes
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <article class="section perguntas-frequentes" id="perguntas-frequentes">
+            <div class="container">
+                <div class="row text-center">
+                    <h2 class="titulo">Perguntas Frequentes</h2>
+                    
+                    <div class="col-md-6">
+                        <input type="checkbox" name="faq" class="ativador-input" id="faq-1">
+                        <!-- A loja é confiável?
+                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                        <div class=box-faq data-aos="fade">
+                            <label for="faq-1" class="etiqueta">
+                                <span class="ico"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                <span class="title">A loja é confiável?</span>
+                            </label>
+                            <p class="faq-desc">
+                                Sim. Oferecemos um atendimento todos os dias da semana via e-mail, e contamos com grandes youtubers do cenário que divulgam nossa loja.
+                            </p>
+                        </div>
+                        
+                        <input type="checkbox" name="faq" class="ativador-input" id="faq-2">
+                        <!-- Meu PC roda o minecraft?
+                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                        <div class=box-faq data-aos="fade">
+                            <label for="faq-2" class="etiqueta">
+                                <span class="ico"><i class="fa fa-cogs" aria-hidden="true"></i></span>
+                                <span class="title">Meu PC roda o minecraft?</span>
+                            </label>
+                            <p class="faq-desc">
+                               <b>Processador:</b> Intel Pentium D or AMD Athlon 64 (K8) 2.6 GHz
+                                <br>
+                                <b>Memória RAM:</b> 2GB
+                                <br>
+                                <b>Placa de Vídeo:</b> Intel HD Graphics or AMD (formerly ATI) Radeon HD Graphics
+                                <br>
+                                <b>Onboard:</b> Nvidia GeForce 9600 GT or AMD Radeon HD 2400 with OpenGL 3.1
+                                <br>
+                                <b>Espaço em disco:</b> 200Mb
+                            </p>
+                        </div>
+                        
+                        <input type="checkbox" name="faq" class="ativador-input" id="faq-6">
+                        <!-- Não estou conseguindo migrar minha conta. o que eu faço?
+                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                        <div class=box-faq data-aos="fade">
+                            <label for="faq-6" class="etiqueta">
+                                <span class="ico"><i class="fa fa-server" aria-hidden="true"></i></span>
+                                <span class="title">Não estou conseguindo migrar minha conta. o que eu faço?</span>
+                            </label>
+                            <p class="faq-desc">
+                               Em caso de dúvidas, dificuldades ou erros entre em contato imediatamente para que possamos lhe ajudar dá melhor forma possível.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        
+                        <input type="checkbox" name="faq" class="ativador-input" id="faq-8">
+                        <!-- Posso comprar por boleto?
+                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                        <div class=box-faq data-aos="fade">
+                            <label for="faq-8" class="etiqueta">
+                                <span class="ico"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                                <span class="title">Posso comprar por boleto?</span>
+                            </label>
+                            <p class="faq-desc">
+                               Claro! Ambos os métodos de pagamentos fornecem a opção de pagamento via boleto (Este meio de pagamento pode demorar até 3 dias para ser aprovado dependendo única e exclusivamente do banco).
+                            </p>
+                        </div>
+                        
+                        <input type="checkbox" name="faq" class="ativador-input" id="faq-3">
+                        <!-- Quais as formas de pagamento?
+                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                        <div class=box-faq data-aos="fade">
+                            <label for="faq-3" class="etiqueta">
+                                <span class="ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                                <span class="title">Quais as formas de pagamento?</span>
+                            </label>
+                            <p class="faq-desc">
+                               Disponibilizamos ao cliente o MercadoPago, PagSeguro & PayPal como meios de pagamentos.
+                            </p>
+                        </div>
+                        
+                        <input type="checkbox" name="faq" class="ativador-input" id="faq-5">
+                        <!-- As contas tem garantia?
+                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                        <div class=box-faq data-aos="fade">
+                            <label for="faq-5" class="etiqueta">
+                                <span class="ico"><i class="fa fa-rocket" aria-hidden="true"></i></span>
+                                <span class="title">As contas tem garantia?</span>
+                            </label>
+                            <p class="faq-desc">
+                               Nossas contas são testadas mais de uma vez para termos certeza que está tudo nos conformes, porém não nos responsabilizamos por contas hackeadas ou quaisquer erros causados pelo cliente ou terceiros.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <!-- CRIANDO O MODAL
+        - "class='md-box'" define que isso é um modal,
+        - data-id define qual é esse modal
+        - data-close faz com que o modal seja fechado ao clique
+        -->
+        <!-- Opção de compra 1 (alt) 
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <aside class="md-box" data-id="janela1">
+            <div class="prod-opcoes col-xs-12 col-md-8 col-md-push-2">
+                <p data-close class="prod-opcoes-close">X</p>
+                <p class="titulo no-space">Full Acesso</p>
+                <div>
+                    <div class="col-sm-4">
+                        <div class="prod-opcoes-box prod-opcoes-box-space">
+                            <p class="sub-titulo">Opção 1</p>
+                            <p class="prod-opcoes-logo"><img src="img/mercadopago.png" alt="logo mercado pago"></p>
+                            
+                            <!-- Link de Compra opção 1 -->
+                            <a class="botao-mercadopago" href="http://mpago.la/GOZS" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="prod-opcoes-box prod-opcoes-box-space">
+                            <p class="sub-titulo">Opção 2</p>
+                            <p class="prod-opcoes-logo"><img src="img/pagseguro.png"></p> 
+                            
+                            <!-- Link de Compra opção 1 -->
+                            <a class="botao-pagseguro" href="https://pag.ae/bdzSHJl" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div> 
+                    </div>
+                    <div class="col-sm-4"> 
+                        <div class="prod-opcoes-box">
+                            <p class="sub-titulo">Opção 3</p>
+                            <p class="prod-opcoes-logo"><img src="img/paypal.png" alt="logo Paypal"></p>
+                            
+                            <!-- Link de Compra opção 1 -->
+                            <a class="botao-mercadopago" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TLZYUGHLC5GNN" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xs-12 prod-download">
+                        <p>Já comprou? Baixe o launcher Original do Minecraft e comece a se divertir!</p>
+                        <a class="btn btn-info" href="https://minecraft.net/pt-br/download/?ref=bm" target="_blank">
+                            <span><i class="fa fa-cloud ico-download"></i>Baixar Jogo</span>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- Opção de compra 2 (alt)
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <aside class="md-box" data-id="janela2">
+            <div class="prod-opcoes col-xs-12 col-md-8 col-md-push-2">
+                <p data-close class="prod-opcoes-close">X</p>
+                <p class="titulo no-space">Minecraft dos Amigos</p>
+                <div>
+                    <div class="col-sm-4">
+                        <div class="prod-opcoes-box prod-opcoes-box-space">
+                            <p class="sub-titulo">Opção 1</p>
+                            <p class="prod-opcoes-logo"><img src="img/mercadopago.png" alt="logo mercado pago"></p>
+                            
+                            <!-- Link de Compra opção 2 -->
+                            <a class="botao-mercadopago" href="http://mpago.la/GOZS" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="prod-opcoes-box prod-opcoes-box-space">
+                            <p class="sub-titulo">Opção 2</p>
+                            <p class="prod-opcoes-logo"><img src="img/pagseguro.png"></p> 
+                            
+                            <!-- Link de Compra opção 2 -->
+                            <a class="botao-pagseguro" href="https://pag.ae/bdzSHJl" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div> 
+                    </div>
+                    <div class="col-sm-4"> 
+                        <div class="prod-opcoes-box">
+                            <p class="sub-titulo">Opção 3</p>
+                            <p class="prod-opcoes-logo"><img src="img/paypal.png" alt="logo Paypal"></p>
+                            
+                            <!-- Link de Compra opção 2 -->
+                            <a class="botao-mercadopago" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TLZYUGHLC5GNN" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xs-12 prod-download">
+                        <p>Já comprou? Baixe o launcher Original do Minecraft e comece a se divertir!</p>
+                        <a class="btn btn-info" href="https://minecraft.net/pt-br/download/?ref=bm" target="_blank">
+                            <span><i class="fa fa-cloud ico-download"></i>Baixar Jogo</span>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- Opção de compra 3 (alt) 
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <aside class="md-box" data-id="janela3">
+            <div class="prod-opcoes col-xs-12 col-md-8 col-md-push-2">
+                <p data-close class="prod-opcoes-close">X</p>
+                <p class="titulo no-space">Minecraft DARK</p>
+                <div>
+                    <div class="col-sm-4">
+                        <div class="prod-opcoes-box prod-opcoes-box-space">
+                            <p class="sub-titulo">Opção 1</p>
+                            <p class="prod-opcoes-logo"><img src="img/mercadopago.png" alt="logo mercado pago"></p>
+                            
+                            <!-- Link de Compra opção 3 -->
+                            <a class="botao-mercadopago" href="http://mpago.la/GOZS" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="prod-opcoes-box prod-opcoes-box-space">
+                            <p class="sub-titulo">Opção 2</p>
+                            <p class="prod-opcoes-logo"><img src="img/pagseguro.png"></p> 
+                            
+                            <!-- Link de Compra opção 3 -->
+                            <a class="botao-pagseguro" href="https://pag.ae/bdzSHJl" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div> 
+                    </div>
+                    <div class="col-sm-4"> 
+                        <div class="prod-opcoes-box">
+                            <p class="sub-titulo">Opção 3</p>
+                            <p class="prod-opcoes-logo"><img src="img/paypal.png" alt="logo Paypal"></p>
+                            
+                            <!-- Link de Compra opção 3 -->
+                            <a class="botao-mercadopago" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TLZYUGHLC5GNN" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xs-12 prod-download">
+                        <p>Já comprou? Baixe o launcher Original do Minecraft e comece a se divertir!</p>
+                        <a class="btn btn-info" href="https://minecraft.net/pt-br/download/?ref=bm" target="_blank">
+                            <span><i class="fa fa-cloud ico-download"></i>Baixar Jogo</span>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- Opção de compra 4 (alt)
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <aside class="md-box" data-id="janela4">
+            <div class="prod-opcoes col-xs-12 col-md-8 col-md-push-2">
+                <p data-close class="prod-opcoes-close">X</p>
+                <p class="titulo no-space">Minecraft SUPREMO</p>
+                <div>
+                    <div class="col-sm-4">
+                        <div class="prod-opcoes-box prod-opcoes-box-space">
+                            <p class="sub-titulo">Opção 1</p>
+                            <p class="prod-opcoes-logo"><img src="img/mercadopago.png" alt="logo mercado pago"></p>
+                            
+                            <!-- Link de Compra opção 4 -->
+                            <a class="botao-mercadopago" href="http://mpago.la/GOZS" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="prod-opcoes-box prod-opcoes-box-space">
+                            <p class="sub-titulo">Opção 2</p>
+                            <p class="prod-opcoes-logo"><img src="img/pagseguro.png"></p> 
+                            
+                            <!-- Link de Compra opção 4 -->
+                            <a class="botao-pagseguro" href="https://pag.ae/bdzSHJl" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div> 
+                    </div>
+                    <div class="col-sm-4"> 
+                        <div class="prod-opcoes-box">
+                            <p class="sub-titulo">Opção 3</p>
+                            <p class="prod-opcoes-logo"><img src="img/paypal.png" alt="logo Paypal"></p>
+                            
+                            <!-- Link de Compra opção 4 -->
+                            <a class="botao-mercadopago" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TLZYUGHLC5GNN" target="_blank">
+                                Comprar
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xs-12 prod-download">
+                        <p>Já comprou? Baixe o launcher Original do Minecraft e comece a se divertir!</p>
+                        <a class="btn btn-info" href="https://minecraft.net/pt-br/download/?ref=bm" target="_blank">
+                            <span><i class="fa fa-cloud ico-download"></i>Baixar Jogo</span>
+                        </a> 
+                    </div>
+                </div> 
+            </div>
+        </aside>
+
+        <!-- Fale Conosco
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <aside class="md-box container" data-id="janelacontato">
+            <div class="prod-opcoes form-contato col-xs-12">
+                <p data-close class="prod-opcoes-close">X</p>
+                <div>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfn0xdFrVw5B695zHIeDrhajQpzNxWEsjWcjlkGihhe0VSKmg/viewform?embedded=true" width="100%" frameborder="0" marginheight="0" marginwidth="0" style="height: 70vh">Carregando…</iframe>
+                </div>
+            </div>
+        </aside>
+        
+    </main> 
+
+    <!-- Rodapé 
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <footer id="rodape">
+        <div class="container">
+            <div class="row text-center">
+                <p class="texto"><a href="#inicio">MCShop&copy;</a> 2018 - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+    
+</body> 
+
+</html>

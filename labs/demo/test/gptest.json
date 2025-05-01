@@ -1,0 +1,102 @@
+{
+  "gp_name":"Example GP",
+  "date_limit":"12/08/2021 às 18 horas",
+  "times":[
+    {
+      "color":"#FFF",
+      "number":"--",
+      "nick":"Matheus \"Zeff\"",
+      "team":"Dias Racing",
+      "time":"1:32.310",
+      "date":"05/08/2021"
+    },
+    {
+      "color":"#444",
+      "number":"--",
+      "nick":"Antonio \"Neto\"",
+      "team":"no Team",
+      "time":"1:33.900",
+      "date":"05/08/2021"
+    },
+    {
+      "color":"#444",
+      "number":"--",
+      "nick":"Rodrigo \"Diguim\"",
+      "team":"no Team",
+      "time":"1:34.886",
+      "date":"05/08/2021"
+    },
+    {
+      "color":"#444",
+      "number":"--",
+      "nick":"Eduardo \"Kess000\"",
+      "team":"no Team",
+      "time":"1:35.916",
+      "date":"05/08/2021"
+    },
+    {
+      "color":"#444",
+      "number":"--",
+      "nick":"Fred \"Renn\"",
+      "team":"no Team",
+      "time":"NC",
+      "date":"NC"
+    },
+    {
+      "color":"#444",
+      "number":"--",
+      "nick":"Rodrigo \"Don\"",
+      "team":"no Team",
+      "time":"NC",
+      "date":"NC"
+    },
+    {
+      "color":"#444",
+      "number":"--",
+      "nick":"Vitor \"Vituuh\"",
+      "team":"no Team",
+      "time":"1:36:999",
+      "date":"06/08/2021"
+    },
+    {
+      "color":"#444",
+      "number":"--",
+      "nick":"Denis \"Endeavor\"",
+      "team":"no Team",
+      "time":"NC",
+      "date":"NC"
+    },
+    {
+      "color":"#124180",
+      "number":"25",
+      "nick":"Paul \"Oovi Cat\"",
+      "team":"AVAX RT",
+      "time":"1:36:999",
+      "date":"06/08/2021"
+    },
+    {
+      "color":"#744C11",
+      "number":13,
+      "nick":"Jean \"HissingStone\"",
+      "team":"Golden Shower",
+      "time":"1:36:999",
+      "date":"06/08/2021"
+    },
+    {
+      "color":"#000",
+      "number":69,
+      "nick":"Gabriel \"ZeroOneTV\"",
+      "team":"Lotus",
+      "time":"1:32.633",
+      "date":"05/08/2021"
+    },
+    {
+      "color":"#E90A32",
+      "number":73,
+      "nick":"Filipe \"Daineze\"",
+      "team":"DNZ Academy",
+      "time":"1:36:999",
+      "date":"06/08/2021"
+    }
+  ]
+}

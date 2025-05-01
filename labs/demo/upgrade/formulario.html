@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt">
+ 
+<head>
+    
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Basic Page Needs 
+-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Up+grade</title>
+    <meta name="theme-color" content="#1d1d1d">
+    <meta name="description" content="descrição completa da loja">
+    <meta name="author" content="JimmyFilips">
+    <meta name="keywords" content="upgrade, comprar, original, barato, brasil"/>
+    
+	<meta name="twitter:title" content="upgrade.com.br" />
+	<meta name="twitter:description" content="descrição de 100 caracteres" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@cavaleiro" /> 
+    <meta name="twitter:image" content="link-da-imagem-de-compartilhamento-(imgur-de-preferencia)" />
+    
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="pgrade.com.br">
+    <meta property="og:title" content="Titulo semi-longo como titulo de reportagem!">
+    <meta property="og:site_name" content="PUBShop">
+    <meta property="og:description" content="descrição da loja">
+    <meta property="og:image" content="link-da-imagem-de-compartilhamento-(imgur-de-preferencia)">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website"> 
+
+    <!-- Link Bootstrap's CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Link style's CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link font-awesome's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="top">
+    
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+MODAL
+-->
+<!--  Modal   -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" class="form-control" id="loginEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginSenha">Senha</label>
+                            <input type="password" class="form-control" id="loginSenha">
+                        </div>
+                        <button type="submit" class="btn btn-danger">Entrar na Conta</button>
+                        <small class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui</a>.</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Fecha Modal  -->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+NAVBAR
+-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark text-white fixed-top py-3 box-shadow justify-content-md-center">
+        <a href="index.html" class="navbar-brand m-sm-auto m-md-0">
+            U+PGRADE
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#boosters">
+                        <svg><rect></rect></svg>Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#quem-somos">
+                        <svg><rect></rect></svg>Quem Somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#youtubers">
+                        <svg><rect></rect></svg>Parceiros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#extra-header">
+                        <svg><rect></rect></svg>Promoções</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario.html">
+                        <svg><rect></rect></svg>Suporte</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HEADER
+-->
+    <header class="container-fluid" id="header">
+        <div class="row bg-dark text-white headerh">
+
+            <div class="col-lg-12 p-0 headerh carousel-content">
+                <div id="carouselHeader" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselHeader" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselHeader" data-slide-to="1"></li>
+                        <li data-target="#carouselHeader" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item w-100 active carousel-a">
+                            <div class="carousel-caption">
+                                <h3 class="">
+                                    “Eu não sei sobre os anjos, mas é o medo que da asas ao homem!”
+                                    <span>- Max Payne</span>
+                                    <a href="#" class="btn btn-outline-danger">Saiba mais!</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item w-100 carousel-b">
+                            <div class="carousel-caption">
+                                <h3 class="">
+                                    “Desculpe, estou em outro castelo”
+                                    <span>- Princesa Peach</span>
+                                    <a href="#" class="btn btn-outline-danger">Saiba mais!</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item w-100 carousel-c">
+                            <div class="carousel-caption">
+                                <h3 class="">
+                                    “Sai desse computador porra, vai dormir!”
+                                    <span>- Minha mãe</span>
+                                    <a href="#" class="btn btn-outline-danger">Saiba mais!</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselHeader" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselHeader" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                    <a class="carousel-control-bottom" href="#extra-header">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+EXTRA HEADER / FORMULÁRIO
+-->
+    <div id="extra-header"></div>
+    <section class="extra-header text-center text-white">
+        <div id="particles-js"></div>
+        <div class="background"></div>
+        <div class="backbox"></div>
+        <div class="container">
+            <div class="my-5">
+                <h2 class="h2 title-danger d-block pb-2">Entre em contato conosco!</h2>
+                <p class="title-desc pb-2">envie uma mensagem para nossa equipe! Atendemos de segunda a sexta, exceto nos feriados :)</p>
+
+				<form action="enviar.php" method="post" name="form" class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 formphp">
+					<label for="nome">Nome*</label>
+					<input id="nome" name="nome" type="text">
+					<label for="email">E-mail*</label>
+					<input id="email" name="email" type="text">
+					<label for="telefone">Telefone</label>
+					<input id="telefone" name="telefone" type="text">
+				
+					<label class="hide">Se você não é um robô, deixe em branco.</label>
+					<input type="text" class="hide" name="leaveblank">
+					<label class="hide">Se você não é um robô, não mude este campo.</label>
+					<input type="text" class="hide" name="dontchange" value="http://" >
+				
+					<label for="mensagem">Mensagem*</label>
+					<textarea name="mensagem" id="mensagem"></textarea>
+				
+					<button class="btn btn-outline-danger mt-4" id="enviar" name="enviar" type="submit">Enviar</button>
+				</form>
+            </div>
+        </div>
+    </section>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+FOOTER
+-->
+    <footer class="bg-dark text-white">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">LINKS</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="interno" href="index.html#boosters">Produtos</a></li>
+                        <li><a class="interno" href="index.html#quem-somos">Quem Somos?</a></li>
+                        <li><a class="interno" href="formulario.html">Suporte</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">E MAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="interno" href="index.html#youtubers">Promoções</a></li>
+                        <li><a class="interno" href="index.html#extra-header">Parceiros</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h6">DADOS DE CONTATO</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>upgrade@upgrade.com.br</li>
+                        <li>De Seg. à Sex. das 8h às 18h</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Facebook</a></li>
+                        <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 copy">
+            <p class="mb-0">U+pgrade © 2018. Alguns direitos reservados.
+            <a href="https://jimmyfilips.github.io/" target="_blank" style="text-decoration: none;">
+            <span class="crimson" data-c="&lt;">&lt;</span>
+            <span class="crimson" data-c="F">F</span>
+            <span class="crimson" data-c="&gt;">&gt;</span>
+            </a>
+            </p>
+            
+        </div>
+    </footer>
+    
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+SCRIPTS
+-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/parallax-config.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Particles -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+    
+</body>
+
+</html>

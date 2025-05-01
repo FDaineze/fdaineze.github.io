@@ -1,0 +1,59 @@
+========================================================================
+Para alterar o LINK DE COMPRA procure no index.html por:
+========================================================================
+
+<!-- Link de Compra MERCADO PAGO - PRIMEIRO PRODUTO -->
+<!-- Link de Compra PAGSEGURO - PRIMEIRO PRODUTO -->
+<!-- Link de Compra PAYPAL - PRIMEIRO PRODUTO -->
+
+<!-- Link de Compra MERCADO PAGO - SEGUNDO PRODUTO -->
+<!-- Link de Compra PAGSEGURO - SEGUNDO PRODUTO -->
+<!-- Link de Compra PAYPAL - SEGUNDO PRODUTO -->
+
+<!-- Link de Compra MERCADO PAGO - TERCEIRO PRODUTO -->
+<!-- Link de Compra PAGSEGURO - TERCEIRO PRODUTO -->
+<!-- Link de Compra PAYPAL - TERCEIRO PRODUTO -->
+
+========================================================================
+Para alterar o texto do TERMOS DE COMPRA procure no index.html por:
+========================================================================
+
+<!-- TEXTO DO TERMOS DE COMPRA -->
+
+========================================================================
+Para alterar o texto dos SLIDES procure no index.html por:
+========================================================================
+
+<!-- PRIMEIRO ITEM DO SLIDE -->
+<!-- SEGUNDO ITEM DO SLIDE -->
+<!-- TERCEIRO ITEM DO SLIDE -->
+
+========================================================================
+Para alterar o PREÇO na parte de PRODUTOS procure no index.html por:
+========================================================================
+
+<!-- PREÇO FPS UPGRADE
+<!-- PREÇO CONNECTION UPGRADE
+<!-- PREÇO MASTER PACK
+
+========================================================================
+Para alterar os YOUTUERS PARCEIROS procure no index.html por:
+========================================================================
+
+LINK-YOUTUBER -->
+IMG -->
+NOME -->
+INSCRITOS -->
+VISUALIZAÇÕES -->
+
+========================================================================
+Para configurar o FORMULARIO DE CONTATO, procure no app.js por:
+========================================================================
+
+// --- ATENÇÃO!! VOCÊ PRECISA ATUALIZAR SEU EMAIL AQUI
+
+==========================================
+E no enviar.php por (logo no inicio):
+==========================================
+
+// Mudar Aqui

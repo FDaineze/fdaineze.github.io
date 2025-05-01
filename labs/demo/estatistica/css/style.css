@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+:root {
+    /* Fonte */
+    --fonte: 'Montserrat', sans-serif;
+    --fonte-cor: #6c6c6c;
+    --fonte-tam: 1.0em;
+    --fonte-tav: 0.85em;
+    --fonte-wei: 300;
+    --fonte-hei: 1.9em;
+
+    /*  cores */
+    --claro-a: #fff;
+    --claro-b: #fafafa;
+    --claro-c: #d8d8d8;
+    --claro-d: #f0f0f0;
+    --escuro-a: #2F343B;
+    --escuro-b: #27282A;
+    --escuro-c: #3E454C;
+    --extra-a: rgb(74, 136, 221);
+    --extra-ab: rgba(74, 136, 221, 0.65);
+    --extra-b: #fff;
+}
+ 
+/* ---------------------------------------------------
+    GLOBAL
+----------------------------------------------------- */
+
+body {
+    font-family: var(--fonte);
+    background: var(--claro-b);
+}
+
+p {
+    font-family: var(--fonte);
+    font-size: var(--fonte-tam);
+    font-weight: var(--fonte-wei);
+    line-height: var(--fonte-hei);
+    color: var(--fonte-cor);
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: var(--claro-a);
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: var(--escuro-a);
+    color: var(--claro-a);
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: var(--escuro-b);
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--escuro-c);
+}
+
+#sidebar ul p {
+    color: var(--claro-a);
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: var(--fonte-tam);
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: var(--extra-b);
+    background: var(--extra-a);
+    cursor: pointer;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+    color: var(--claro-a);
+    background: var(--escuro-b);
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: var(--fonte-tav) !important;
+    padding-left: 30px !important;
+    background: var(--escuro-b);
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: var(--fonte-tav) !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: var(--claro-a);
+    color: var(--escuro-a);
+}
+
+a.github,
+a.github:hover {
+    background: var(--escuro-b) !important;
+    color: var(--claro-a) !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT
+----------------------------------------------------- */
+
+#content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+.btn-info {
+    color: var(--extra-b);
+    background-color: var(--extra-a);
+    border-color: var(--extra-a);
+}
+
+.btn-info.focus,
+.btn-info:focus,
+.btn-info:not(:disabled):not(.disabled).active:focus,
+.btn-info:not(:disabled):not(.disabled):active:focus,
+.show > .btn-info.dropdown-toggle:focus  {
+    box-shadow: 0 0 0 0.2rem var(--extra-ab);
+}
+
+.btn-info:hover,
+.btn-info:not(:disabled):not(.disabled).active,
+.btn-info:not(:disabled):not(.disabled):active,
+.show > .btn-info.dropdown-toggle {
+    color: var(--extra-b);
+    background-color: var(--extra-a);
+    border-color: var(--extra-ab);
+    box-shadow: 0 0 0 0.2rem var(--extra-ab);
+}
+
+.btn.add-entrada, 
+.btn.rem-entrada {    
+    margin: 0 5px;
+    padding: 0px;
+    width: 35px;
+    border-radius: 27px;
+}
+
+.btn.btn-tema:hover,
+.btn.btn-tema:active { 
+    color: var(--extra-b);
+    background-color: var(--extra-a);
+    border-color: var(--extra-ab);
+    box-shadow: 0 0 0 0.2rem var(--extra-ab);
+}
+
+.fluid-options {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.box-entradas {
+    background-color: var(--claro-d);
+    border-radius: 13px;
+    padding: 0.3rem;
+/*    margin-bottom: 0;*/
+    
+    margin-bottom: 40px;
+}
+.campo {  
+    display: inline-block;
+    background: var(--claro-a);
+    margin: 0 5px;
+    padding: 0px 20px;
+    width: 135px;
+    border: 1px solid var(--claro-c);
+    border-radius: 27px;
+}
+.box-entradas .campo {
+    margin: .4rem .2rem;
+}
+
+.correto {
+    color: green;
+} 
+.erro {
+    color: red;
+}
+
+.tabela-frequencia {
+    border-collapse: collapse;
+    min-width: 99%;
+    text-align: center;
+}
+.tabela-frequencia td, #tabela-frequencia th {
+    border: 1px solid var(--claro-d);
+    padding: 8px;
+    min-width: 4rem;
+}
+.tabela-frequencia tr:hover {
+    background-color: var(--claro-d);
+}
+.tabela-frequencia th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: var(--extra-a);
+    color: white;
+}
+.tabela-frequencia .tab-freq-soma {
+	background-color: var(--claro-d);
+}
+.tabela-frequencia.nostretch {
+    min-width: auto;
+}
+.tabela-frequencia .toleft {
+    text-align: left;
+}
+.tabela-resultados { 
+    display: flex;
+}
+ 
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    #content {
+        width: 100%;
+    }
+    
+    #content.active .navbar .container-fluid {
+        transition: all .3s;
+        flex-direction: row;
+    }
+    
+    #content.active .navbar .container-fluid {
+        flex-direction: row-reverse;
+    }
+        
+    #content.active .navbar .container-fluid div .navbar-nav {
+        display: none;
+    }
+
+    #sidebarCollapse span {
+        display: none;
+    }
+    
+    .tabela-resultados {
+        justify-content: center;
+    }
+    
+    .box-entradas {
+        text-align: center;
+    }
+}
